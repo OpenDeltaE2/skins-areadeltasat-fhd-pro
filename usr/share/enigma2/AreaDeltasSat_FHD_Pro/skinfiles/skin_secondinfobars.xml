@@ -1,0 +1,136 @@
+<skin>
+<screen name="SecondInfoBar" position="0,0" size="1920,1080" title="InfoBar" backgroundColor="background" transparent="0" flags="wfNoBorder">
+  <panel name="InfobarTemplate" />
+  <ePixmap position="0,0" size="1920,1080" zPosition="-1" backgroundColor="background" borderColor="background" />
+  <!--  /* CurrentService  -->
+  <widget source="session.CurrentService" render="Label" position="1160,4" size="740,74" backgroundColor="transparent" zPosition="1" foregroundColor="orange" font="Regular;22" valign="top" halign="left">
+    <convert type="PliExtraInfo">All</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="35,1" size="1000,60" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="selectedFG" noWrap="1" font="PG1;40" halign="left" valign="top">
+    <convert type="EventName">NameNow</convert>
+  </widget>
+  <widget source="session.Event_Now" render="AreaDeltasSatRunningText" position="33,65" size="800,220" options="movetype=running,direction=top,startpoint=0,startdelay=2000,wrap=1,always=0,repeat=2,oneshot=1" font="Regular;27" halign="block" zPosition="1" transparent="1" borderWidth="0" borderColor="black">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <eLabel name="" position="35,293" size="1000,4" backgroundColor="white" foregroundColor="black" />
+  <widget source="session.Event_Next" render="Label" position="35,307" size="1000,60" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="selectedFG" noWrap="1" font="PG1;40" halign="left" valign="top">
+    <convert type="EventName">NameNext</convert>
+  </widget>
+  <widget source="session.Event_Next" render="AreaDeltasSatRunningText" position="35,369" size="800,220" options="movetype=running,direction=top,startpoint=0,startdelay=2000,wrap=1,always=0,repeat=2,oneshot=1" font="Regular;27" halign="block" zPosition="1" transparent="1">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <!-- Pig Tv -->
+  <widget source="session.VideoPicture" render="Pig" position="1160,90" size="740,380" backgroundColor="transparent" zPosition="1" borderColor="bluetransparent" />
+  <widget source="session.CurrentService" render="Label" position="1157,100" size="740,35" zPosition="1" foregroundColor="white" transparent="1" font="PG1;30" borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Picon" position="1160,485" size="100,60" zPosition="10" transparent="1" alphatest="on">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1275,480" size="625,35" zPosition="2" halign="left" font="Regular;28" backgroundColor="background" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1275,520" size="80,30" zPosition="2" halign="center" font="Regular;25" backgroundColor="background" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="infobar/progress.png" position="1361,531" size="450,10" zPosition="2" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1820,520" size="80,30" backgroundColor="#00ffffff" transparent="1" zPosition="1" font="Regular;25" halign="left">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel name="" position="1160,560" size="740,6" backgroundColor="white" foregroundColor="black" />
+  <!--  -->
+  <widget font="LCD; 30" render="Label" position="1190,674" size="118,50" source="session.MSNWeather" transparent="1" zPosition="2" halign="left" foregroundColor="#00ffffff" backgroundColor="#00ffffff">
+    <convert type="MSNWeather">temperature_current</convert>
+  </widget>
+  <widget render="MSNWeatherPixmap" alphatest="blend" position="1194,570" size="100,100" source="session.MSNWeather" transparent="1" zPosition="2">
+    <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/AreaDeltasSat_FHD_Pro/weathericon/,png</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 35" render="Label" position="1298,573" size="300,30" source="session.MSNWeather" zPosition="2" halign="left" transparent="1" foregroundColor="orange">
+    <convert type="MSNWeather">city</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 30" foregroundColor="#00ffffff" render="Label" position="1297,607" size="360,40" source="session.MSNWeather" zPosition="2" halign="left" transparent="1" valign="center">
+    <convert type="MSNWeather">temperature_text,current</convert>
+  </widget>
+  <ePixmap name="" pixmap="AreaDeltasSat_FHD_Pro/weathericon/temp2.png" position="314,648" size="28,70" transparent="0" zPosition="2" alphatest="blend" />
+  <ePixmap name="" pixmap="AreaDeltasSat_FHD_Pro/weathericon/temp2.png" position="624,648" size="28,70" transparent="0" zPosition="2" alphatest="blend" />
+  <ePixmap name="" pixmap="AreaDeltasSat_FHD_Pro/weathericon/temp2.png" position="934,648" size="28,70" transparent="0" zPosition="2" alphatest="blend" />
+  <ePixmap name="" pixmap="AreaDeltasSat_FHD_Pro/weathericon/umbrella.png" position="1604,571" size="50,50" transparent="0" zPosition="2" alphatest="blend" />
+  <ePixmap name="" pixmap="AreaDeltasSat_FHD_Pro/weathericon/wind.png" position="1307,672" size="60,60" transparent="0" zPosition="2" alphatest="blend" />
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 20" render="Label" position="1370,672" size="300,30" source="session.MSNWeather" zPosition="5" halign="left" transparent="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">winddisplay</convert>
+  </widget>
+  <ePixmap name="" pixmap="AreaDeltasSat_FHD_Pro/weathericon/humi.png" position="1368,704" size="40,55" transparent="0" zPosition="2" alphatest="blend" />
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 40" render="Label" position="1407,705" size="150,55" source="session.MSNWeather" zPosition="8" halign="left" transparent="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">humidity</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="75,640" size="80,80" source="session.MSNWeather" transparent="1" zPosition="60">
+    <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/AreaDeltasSat_FHD_Pro/weathericon/,png</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Console; 30" render="Label" position="75,602" size="180,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">weekshortday,day2</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 30" render="Label" position="155,640" size="100,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" valign="center" foregroundColor="orange">
+    <convert type="MSNWeather">temperature_high,day2</convert>
+  </widget>
+  <widget backgroundColor="#00ffffff" font="Regular; 30" render="Label" position="155,680" size="100,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" noWrap="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">temperature_low,day2</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 22" foregroundColor="#00ffffff" render="Label" position="44,722" size="250,40" source="session.MSNWeather" zPosition="2" halign="center" transparent="1" valign="center">
+    <convert type="MSNWeather">temperature_text,day2</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Console; 30" render="Label" position="389,602" size="180,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">weekshortday,day3</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="390,640" size="80,80" source="session.MSNWeather" transparent="1" zPosition="60">
+    <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/AreaDeltasSat_FHD_Pro/weathericon/,png</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 30" render="Label" position="470,640" size="100,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" valign="center" foregroundColor="orange">
+    <convert type="MSNWeather">temperature_high,day3</convert>
+  </widget>
+  <widget backgroundColor="#00ffffff" font="Regular; 30" render="Label" position="470,680" size="100,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" noWrap="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">temperature_low,day3</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 22" foregroundColor="#00ffffff" render="Label" position="354,717" size="250,40" source="session.MSNWeather" zPosition="2" halign="center" transparent="1" valign="center">
+    <convert type="MSNWeather">temperature_text,day3</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="705,640" size="80,80" source="session.MSNWeather" transparent="1" zPosition="60">
+    <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/AreaDeltasSat_FHD_Pro/weathericon/,png</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Console; 30" render="Label" position="705,602" size="180,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">weekshortday,day4</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 30" render="Label" position="785,640" size="100,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" valign="center" foregroundColor="orange">
+    <convert type="MSNWeather">temperature_high,day4</convert>
+  </widget>
+  <widget backgroundColor="#00ffffff" font="Regular; 30" render="Label" position="787,680" size="100,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" noWrap="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">temperature_low,day4</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 22" foregroundColor="#00ffffff" render="Label" position="675,722" size="250,40" source="session.MSNWeather" zPosition="2" halign="center" transparent="1" valign="center">
+    <convert type="MSNWeather">temperature_text,day4</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="1010,640" size="80,80" source="session.MSNWeather" transparent="1" zPosition="30">
+    <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/AreaDeltasSat_FHD_Pro/weathericon/,png</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Console; 30" render="Label" position="1010,602" size="180,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">weekshortday,day5</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 30" render="Label" position="1090,640" size="100,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" valign="center" foregroundColor="orange">
+    <convert type="MSNWeather">temperature_high,day5</convert>
+  </widget>
+  <widget backgroundColor="#00ffffff" font="Regular; 30" render="Label" position="1090,680" size="100,40" source="session.MSNWeather" zPosition="30" halign="center" transparent="1" noWrap="1" foregroundColor="#00ffffff">
+    <convert type="MSNWeather">temperature_low,day5</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="#00ffffff" font="Regular; 22" foregroundColor="#00ffffff" render="Label" position="975,722" size="250,40" source="session.MSNWeather" zPosition="2" halign="center" transparent="1" valign="center">
+    <convert type="MSNWeather">temperature_text,day5</convert>
+  </widget>
+  <ePixmap name="" pixmap="AreaDeltasSat_FHD_Pro/meteo.png" position="0,561" size="1920,200" transparent="0" zPosition="1" alphatest="blend" />
+  <widget source="session.Event_Now" render="BackdropX" nexts="0" usedImage="backdrop" delayPic="0" position="849,61" zPosition="10" size="290,178" alphatest="blend" />
+  <widget source="session.Event_Next" render="BackdropX" nexts="1" usedImage="backdrop" delayPic="0" position="849,366" zPosition="10" size="290,178" alphatest="blend" />
+  <!--<widget source="session.Event_Now" render="AreaDeltasSatBackdrop1" position="849,61" size="290,178" zPosition="-50" />
+  <widget source="session.Event_Next" render="AreaDeltasSatBackdrop1" position="849,366" size="290,178" zPosition="-50" />-->
+</screen>
+</skin>

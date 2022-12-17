@@ -1,0 +1,114 @@
+<skin>
+<!-- Templates -->
+<screen name="PlayerTemplate">
+  <widget source="session.CurrentService" render="Label" position="c-624,6" size="1248,74" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;36" borderColor="black" valign="center" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <ePixmap pixmap="dvr/scale1024.png" position="42,87" size="1536,12" zPosition="1" />
+  <widget source="session.CurrentService" render="PositionGauge" position="42,84" size="1536,18" transparent="1" zPosition="4" pointer="dvr/position_pointer1024.png:1536,4">
+    <convert type="ServicePosition">Gauge</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="42,46" size="135,37" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;33" borderColor="black" valign="center" halign="left">
+    <convert type="ServicePosition">Position,ShowHours</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1402,46" size="175,37" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;33" borderColor="black" valign="center" halign="right">
+    <convert type="ServicePosition">Remaining,Plus,ShowHours</convert>
+  </widget>
+  <widget source="session.RecordState" render="Pixmap" pixmap="buttons/rec.png" position="1590,79" size="30,30" zPosition="3" alphatest="on">
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="global.CurrentTime" render="Label" borderWidth="2" position="1428,4" size="150,37" backgroundColor="transparent" noWrap="1" zPosition="1" foregroundColor="foreground" font="Regular;33" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="c-109,105" size="219,31" zPosition="2" backgroundColor="transparent" foregroundColor="foreground" font="Regular;30" borderWidth="2" valign="top" halign="center">
+    <convert type="ExtraInfo">ResolutionString</convert>
+  </widget>
+  <eLabel position="42,105" size="225,195" backgroundColor="transparent" borderWidth="2" font="Regular;37" borderColor="black" halign="left" text="&gt;" zPosition="1" />
+</screen>
+<screen name="TopTemplate">
+  <eLabel position="0,0" size="1920,87" backgroundColor="background" />
+  <ePixmap pixmap="border/smallshadowline.png" position="0,87" size="1920,3" zPosition="2" />
+  <widget source="screen_path" render="Label" position="30,5" size="1860,20" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;19" valign="center" halign="left" />
+  <widget source="Title" render="Label" position="28,7" size="1860,75" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" />
+  <widget source="global.CurrentTime" render="Label" position="1012,25" size="610,65" font="PG;25" foregroundColor="white" backgroundColor="background_tux" transparent="1" halign="center" zPosition="1">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1624,36" size="294,35" zPosition="4" font="PG;25" halign="left" backgroundColor="transpBlack" foregroundColor="un808080" transparent="1">
+    <convert type="ClockToText">Format:%H:%M:%S</convert>
+  </widget>
+</screen>
+<screen name="BasicTemplate">
+  <panel name="TopTemplate" />
+  <panel name="ButtonTemplate" />
+  <eLabel position="0,1022" size="1920,58" backgroundColor="background" />
+  <ePixmap pixmap="border/smallshadowline.png" position="0,1020" size="1920,3" />
+</screen>
+<screen name="TextTemplate">
+  <widget name="text" position="30,528" size="720,481" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;30" />
+</screen>
+<screen name="SelectionTemplate">
+  <panel name="BasicTemplate" />
+  <widget source="session.VideoPicture" render="Pig" position="30,120" size="720,405" backgroundColor="transparent" zPosition="1" />
+</screen>
+<screen name="PigTemplate">
+  <panel name="SelectionTemplate" />
+</screen>
+<screen name="MenuTemplate">
+  <!-- Pig Tv -->
+  
+  <widget source="Event" render="AreaDeltasSatInfoEvents" />
+  <widget source="session.VideoPicture" render="Pig" position="30,120" size="720,405" backgroundColor="transparent" zPosition="1" />
+  <widget source="session.CurrentService" render="Label" position="100,560" size="670,40" zPosition="1" foregroundColor="white" transparent="1" font="PG;26" borderColor="black" borderWidth="2" noWrap="1" valign="center" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Picon" position="30,545" size="100,60" zPosition="10" transparent="1" alphatest="on">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="30,640" size="720,60" zPosition="2" halign="center" font="PG;22" foregroundColor="orange" backgroundColor="background" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="25,700" size="720,300" font="Menu;24" halign="block" zPosition="1" transparent="1" borderWidth="0" borderColor="orange">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <eLabel position="30,614" size="720,2" backgroundColor="white" />
+  <eLabel position="30,680" size="720,2" backgroundColor="white" />
+  <eLabel name="" position="1450,980" size="450,40" text="Skin: mod. By @dragon@ " font="Menu;25" halign="left" zPosition="3" foregroundColor="white" backgroundColor="background" transparent="0" />
+  <eLabel position="10,1020" size="1900,2" backgroundColor="grey" />
+  <widget source="global.CurrentTime" render="Label" position="1012,25" size="610,65" font="PG;25" foregroundColor="white" backgroundColor="background_tux" transparent="1" halign="center" zPosition="1">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1624,36" size="294,35" zPosition="4" font="PG;25" halign="left" backgroundColor="transpBlack" foregroundColor="un808080" transparent="1">
+    <convert type="ClockToText">Format:%H:%M:%S</convert>
+  </widget>
+  <widget name="description" position="150,30" size="550,70" font="error;40" backgroundColor="bluetransparent" foregroundColor="white" transparent="1" valign="top" halign="left" />
+  <eLabel text="              " position="150,30" size="550,70" font="error;40" backgroundColor="bluetransparent" foregroundColor="white" transparent="1" valign="top" halign="left" />
+  <!--  -->
+  <panel name="ButtonTemplate" />
+  <widget name="information" position="780,105" size="1110,900" font="Menu;25" transparent="0" scrollbarMode="showOnDemand" />
+  <widget source="menu" render="Listbox" position="780,105" size="1110,900" font="Menu;36" transparent="0" scrollbarMode="showOnDemand">
+    <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (75,15),size = (1035,45),flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,text = 0) ],
+		"fonts": [gFont("Menu",36)],
+		"itemHeight": 75
+	}
+			</convert>
+  </widget>
+</screen>
+<screen name="VKeyIconPanel">
+  <widget source="VKeyIcon" conditional="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" zPosition="10" alphatest="blend" position="30,1032" size="52,38">
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
+<screen name="ConfigTemplate">
+  <widget name="config" conditional="config" position="780,105" size="1110,900" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
+  <widget name="list" conditional="list" position="780,100" size="1110,900" itemHeight="38" font="Regular;28" scrollbarMode="showOnDemand" />
+</screen>
+<screen name="DescriptionTemplate">
+  <widget name="description" objectTypes="description,Button,Label" position="30,570" size="720,300" font="Regular;32" valign="top" halign="block" />
+  <widget source="description" render="Label" objectTypes="description,StaticText" position="30,570" size="720,300" font="Regular;32" valign="top" halign="block" />
+</screen>
+<screen name="KeyPrevNextTemplate_Hideable">
+  <widget name="h_prev" pixmap="buttons/key_prev.png" zPosition="1" alphatest="blend" position="30,1031" size="52,38" />
+  <widget name="h_next" pixmap="buttons/key_next.png" zPosition="1" alphatest="blend" position="82,1031" size="52,38" />
+</screen>
+</skin>

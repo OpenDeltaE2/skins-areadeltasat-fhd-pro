@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<skin>
+<output id="0">
+    <resolution bpp="32" xres="1920" yres="1080" />
+  </output>
+  <fonts>
+    <font name="Regular" filename="LiberationSans-Regular.ttf" scale="100" />
+    <font name="LCD" filename="lcd.ttf" scale="100" />
+    <font name="Console" filename="tuxtxt.ttf" scale="100" />
+    <font name="Fixed" filename="/usr/share/enigma2/AreaDeltasSat_FHD_Pro/fonts/andale.ttf" scale="100" />
+    <font name="DejaVuSans" filename="/usr/share/enigma2/AreaDeltasSat_FHD_Pro/fonts/DejaVuSans.ttf" scale="100" />
+    <font name="error" filename="/usr/share/enigma2/AreaDeltasSat_FHD_Pro/fonts/error.ttf" scale="100" />
+    <font name="Regular" filename="/usr/share/enigma2/AreaDeltasSat_FHD_Pro/fonts/tiny.ttf" scale="94" />
+    <font name="Menu" filename="/usr/share/enigma2/AreaDeltasSat_FHD_Pro/fonts/nmsbd.ttf" scale="100" />
+    <font name="PG" filename="/usr/share/enigma2/AreaDeltasSat_FHD_Pro/fonts/venus.ttf" scale="100" />
+    <font name="PG2" filename="/usr/share/enigma2/AreaDeltasSat_FHD_Pro/fonts/JOYCIRCU.ttf" scale="100" />
+    <font name="PG1" filename="/usr/share/enigma2/AreaDeltasSat_FHD_Pro/fonts/Carbon.ttf" scale="100" />
+    <alias name="ChoiceList" font="Regular" size="28" height="38" />
+    <alias name="TextNormal" font="Regular" size="28" height="38" />
+    <alias name="ChoiceBoxDescription" font="Regular" size="22" height="25" />
+    <alias name="FileList" font="Regular" size="28" height="38" />
+    <alias name="FileListMulti" font="Regular" size="28" height="38" />
+    <alias name="PluginBrowser0" font="Regular" size="32" height="76" />
+    <alias name="PluginBrowser1" font="Regular" size="22" />
+    <alias name="ServiceInfo" font="Regular" size="30" height="45" />
+    <alias name="SelectionList" font="Regular" size="30" height="45" />
+    <alias name="ImsSelectionList" font="Regular" size="28" height="30" />
+    <alias name="PartnerBoxEntryList0" font="Regular" size="28" height="38" />
+    <alias name="PartnerBoxEntryList1" font="Regular" size="28" />
+    <alias name="PartnerBoxE2TimerMenu0" font="Regular" size="32" height="114" />
+    <alias name="PartnerBoxE2TimerMenu1" font="Regular" size="28" />
+    <alias name="PartnerBoxBouquetList0" font="Regular" size="32" height="45" />
+    <alias name="PartnerBoxBouquetList1" font="Regular" size="28" />
+    <alias name="PartnerBoxChannelList0" font="Regular" size="32" height="114" />
+    <alias name="PartnerBoxChannelList1" font="Regular" size="28" />
+    <alias name="PartnerBoxChannelEPGList0" font="Regular" size="32" height="38" />
+    <alias name="PartnerBoxChannelEPGList1" font="Regular" size="24" />
+    <alias name="VirtualKeyBoard" font="DejaVuSans" size="42" height="68" />
+    <alias name="HelpMenuList" font="Regular" size="30" height="45" />
+    <alias name="HelpMenuListExt0" font="Regular" size="32" height="75" />
+    <alias name="HelpMenuListExt1" font="Regular" size="28" />
+    <alias name="Dreamexplorer" font="Regular" size="30" height="45" />
+    <alias name="PlayList" font="Regular" size="28" height="38" />
+    <alias name="AutotimerList" font="Regular" size="22" height="25" />
+    <alias name="AutotimerListExt0" font="Regular" size="28" />
+    <alias name="AutotimerListExt1" font="Regular" size="22" height="95" />
+    <alias name="FcZipArchiver" font="Fixed" size="26" height="45" />
+    <alias name="fstabMenuList" font="Regular" size="30" height="250" />
+  </fonts>
+  <!-- Colors -->
+  <colors>
+    <color name="#101025" value="#00101025" />
+    <color name="#1080911" value="#01080911" />
+    <color name="#151505" value="#00151505" />
+    <color name="#1c2c5c" value="#001c2c5c" />
+    <color name="#232323" value="#00232323" />
+    <color name="#25062748" value="#25062748" />
+    <color name="#254f7497" value="#254f7497" />
+    <color name="#302c2c39" value="#302c2c39" />
+    <color name="#31000000" value="#31000000" />
+    <color name="#333333" value="#00333333" />
+    <color name="#353e575e" value="#353e575e" />
+    <color name="#40000000" value="#40000000" />
+    <color name="#404040" value="#00404040" />
+    <color name="#505555" value="#00505555" />
+    <color name="#7f000000" value="#7f000000" />
+    <color name="#80000000" value="#80000000" />
+    <color name="#808080" value="#00808080" />
+    <color name="#909090" value="#00909090" />
+    <color name="#b0b0b0" value="#00b0b0b0" />
+    <color name="#cc60" value="#0000cc60" />
+    <color name="#dddddd" value="#00dddddd" />
+    <color name="#e5b243" value="#00e5b243" />
+    <color name="#eeeeee" value="#00eeeeee" />
+    <color name="#f0b400" value="#00f0b400" />
+    <color name="#ff0000" value="#00ff0000" />
+    <color name="#ffffff" value="#00ffffff" />
+    <color name="#ffffffff" value="#ffffffff" />
+    <color name="background" value="#1706091e" />
+    <color name="basictemplatecolor" value="#00000000" />
+    <color name="black" value="#00000000" />
+    <color name="blue" value="#00879ce1" />
+    <color name="bluetransparent" value="#08001e4b" />
+    <color name="dark" value="#00242424" />
+    <color name="darkgrey" value="#00555556" />
+    <color name="fallback" value="#00b0b0c0" />
+    <color name="foreground" value="#00f0f0f0" />
+    <color name="green" value="#0056c856" />
+    <color name="greentransparent" value="#08004c00" />
+    <color name="grey" value="#00b6b6b6" />
+    <color name="infobarBG" value="#41080808" />
+    <color name="listbox" value="#000f56a4" />
+    <color name="notavailable" value="#005e5e5e" />
+    <color name="noTransBG" value="#00101214" />
+    <color name="orange" value="#00ff6600" />
+    <color name="rds_text_bg" value="#00003258" />
+    <color name="red" value="#00ff4a3c" />
+    <color name="redtransparent" value="#084c0000" />
+    <color name="rssviewtop" value="#00005050" />
+    <color name="secondBG" value="#18101214" />
+    <color name="secondFG" value="#00ffff00" />
+    <color name="selectedBG" value="#06303240" />
+    <color name="selectedFG" value="#00fcc000" />
+    <color name="selectorcolor" value="#06303240" />
+    <color name="toptemplatecolor" value="#000d0f16" />
+    <color name="transparent" value="#ff000000" />
+    <color name="transpBlack" value="#54111112" />
+    <color name="transpDark" value="#54242424" />
+    <color name="transponderinfo" value="#00f0f0f0" />
+    <color name="transpWhite" value="#70f0f0f0" />
+    <color name="un33333a" value="#0033333a" />
+    <color name="un40a0aa0" value="#040a0aa0" />
+    <color name="un4a00a0a" value="#04a00a0a" />
+    <color name="uncccccc" value="#00cccccc" />
+    <color name="white" value="#00f0f0f0" />
+    <color name="yellow" value="#00ffff00" />
+    <color name="yellowsoft" value="#0000ff00" />
+    <color name="yellowtransparent" value="#084b4b00" />
+  </colors>
+  <parameters>
+    <parameter name="FcListMultiLock" value="2,0,25,25" />
+    <parameter name="FcListMultiIcon" value="45,0,25,25" />
+    <parameter name="FcListMultiName" value="80,0,700,40" />
+    <parameter name="FcListIcon" value="10,7,30,37" />
+    <parameter name="FcListName" value="40,2,800,37" />
+    <parameter name="PlayListIcon" value="10,7,30,37" />
+    <parameter name="PlayListName" value="40,0,800,37" />
+    <parameter name="ImsSelectionListDescr" value="46,4,1000,45" />
+    <parameter name="ImsSelectionListLock" value="0,2,36,36" />
+    <parameter name="PluginBrowserIcon" value="10,8,150,60" />
+    <parameter name="PluginBrowserName" value="180,2,35" />
+    <parameter name="PluginBrowserDescr" value="180,38,30" />
+    <parameter name="PluginBrowserDownloadIcon" value="10,5,80,60" />
+    <parameter name="PluginBrowserDownloadName" value="90,0,32" />
+    <parameter name="PluginBrowserDownloadDescr" value="90,30,30" />
+	<parameter name="ProgrammlistenUpdaterList"     value="10,8,600,200,40" />
+	<parameter name="ProgrammlistenUpdaterListFont" value="Regular;26" />
+    <parameter name="SelectionListLock" value="10,2,35,35" />
+    <parameter name="SelectionListLockOff" value="10,2,35,35" />
+    <parameter name="SelectionListDescr" value="60,2,820,32" />
+    <parameter name="HelpMenuListHlp" value="0,0,840,42" />
+    <parameter name="HelpMenuListExtHlp0" value="0,0,840,39" />
+    <parameter name="HelpMenuListExtHlp1" value="0,42,840,30" />
+    <parameter name="ConfigListSeperator" value="500" />
+    <parameter name="ConfigListSlider" value="22,3" />
+    <parameter name="ChoicelistIcon" value="2,4,35,35" />
+    <parameter name="ChoicelistDash" value="0,0,850,35" />
+    <parameter name="ChoicelistName" value="45,0,850,35" />
+    <parameter name="ServiceInfoLeft" value="0,0,450,40" />
+    <parameter name="ServiceInfoRight" value="460,0,800,40" />
+    <parameter name="VirtualKeyBoard" value="76,72" />
+    <parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
+    <parameter name="AutotimerEnabledIcon" value="2,1,25,25" />
+    <parameter name="AutotimerRecordIcon" value="30,1,25,25" />
+    <parameter name="ExpandableListIcon" value="0,0,55,38" />
+    <parameter name="ExpandableListDescr" value="55,2,1000,45" />
+    <parameter name="fstabMenuList" value="0, 10, 300, 50, 400, 10, 500, 50" />
+    <parameter name="AllowUserDatesAndTimes" value="1, 1" />
+    <parameter name="AllowUseOnlyIcon" value="1, 1" />
+    <parameter name="AllowUserDatesAndTimesDisplay" value="1, 1" />
+  </parameters>
+  <switchpixmap>
+    <pixmap name="menu_on" filename="icons/menu_on.png" />
+    <pixmap name="menu_off" filename="icons/menu_off.png" />
+  </switchpixmap>
+  <!-- Window -->
+  <windowstyle id="0" type="skinned">
+    <title offset="40,5" font="Regular;32" />
+    <color name="Background" color="background" />
+    <color name="LabelForeground" color="foreground" />
+    <color name="ListboxBackground" color="background" />
+    <color name="ListboxForeground" color="white" />
+    <color name="ListboxSelectedBackground" color="transpDark" />
+    <color name="ListboxSelectedForeground" color="yellow" />
+    <color name="ListboxMarkedBackground" color="un40a0aa0" />
+    <color name="ListboxMarkedForeground" color="red" />
+    <color name="ListboxMarkedAndSelectedBackground" color="un4a00a0a" />
+    <color name="ListboxMarkedAndSelectedForeground" color="red" />
+    <color name="WindowTitleForeground" color="foreground" />
+    <color name="WindowTitleBackground" color="background" />
+    <borderset name="bsWindow">
+      <pixmap filename="window/top_left_corner.png" pos="bpTopLeft" />
+      <pixmap filename="window/top_edge.png" pos="bpTop" />
+      <pixmap filename="window/top_right_corner.png" pos="bpTopRight" />
+      <pixmap filename="window/left_edge.png" pos="bpLeft" />
+      <pixmap filename="window/right_edge.png" pos="bpRight" />
+      <pixmap filename="window/bottom_left_corner.png" pos="bpBottomLeft" />
+      <pixmap filename="window/bottom_edge.png" pos="bpBottom" />
+      <pixmap filename="window/bottom_right_corner.png" pos="bpBottomRight" />
+    </borderset>
+    <borderset name="bsListboxEntry">
+      <pixmap filename="border/line.png" pos="bpTop" />
+      <pixmap filename="border/line.png" pos="bpBottom" />
+      <pixmap filename="border/vline.png" pos="bpLeft" />
+      <pixmap filename="border/vline.png" pos="bpRight" />
+    </borderset>
+  </windowstyle>
+  <windowstyle id="1" type="skinned">
+    <color name="Background" color="black" />
+    <color name="LabelForeground" color="white" />
+    <color name="ListboxBackground" color="black" />
+    <color name="ListboxForeground" color="white" />
+    <color name="ListboxSelectedBackground" color="black" />
+    <color name="ListboxSelectedForeground" color="white" />
+    <color name="ListboxMarkedBackground" color="black" />
+    <color name="ListboxMarkedForeground" color="white" />
+    <color name="ListboxMarkedAndSelectedBackground" color="black" />
+    <color name="ListboxMarkedAndSelectedForeground" color="white" />
+    <color name="WindowTitleForeground" color="white" />
+    <color name="WindowTitleBackground" color="black" />
+  </windowstyle>
+  <include filename="AreaDeltasSat_FHD_Pro/skinfiles/skin_atv.xml"/>
+	<include filename="AreaDeltasSat_FHD_Pro/skinfiles/skin_button.xml"/>
+	<include filename="AreaDeltasSat_FHD_Pro/skinfiles/skin_channelist.xml"/>
+	<include filename="AreaDeltasSat_FHD_Pro/skinfiles/skin_infobars.xml"/>
+	<include filename="AreaDeltasSat_FHD_Pro/skinfiles/skin_secondinfobars.xml"/>
+	<include filename="AreaDeltasSat_FHD_Pro/skinfiles/skin_templates.xml"/>
+	</skin>

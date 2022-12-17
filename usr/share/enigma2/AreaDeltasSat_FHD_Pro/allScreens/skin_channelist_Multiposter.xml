@@ -1,0 +1,52 @@
+<skin>
+<screen name="ChannelSelection" title="Channel Selection" position="fill" flags="wfNoBorder" size="1920,1080">
+  <panel name="BasicTemplate" />
+  <panel name="KeyMenuInfoTemplate" />
+  <!--<widget source="ServiceEvent" render="AreaDeltasSatLocalParental2" position="1040,305" size="50,50" alphatest="blend" zPosition="102" />-->
+  <ePixmap pixmap="AreaDeltasSat_FHD_Pro/nocover.png" position="910,86" size="185,272" zPosition="100" alphatest="blend" />
+  <ePixmap pixmap="AreaDeltasSat_FHD_Pro/nocover.png" position="910,371" size="185,272" zPosition="100" alphatest="blend" />
+  <ePixmap pixmap="AreaDeltasSat_FHD_Pro/nocover.png" position="1180,371" size="185,272" zPosition="100" alphatest="blend" />
+  <ePixmap pixmap="AreaDeltasSat_FHD_Pro/nocover.png" position="1450,371" size="185,272" zPosition="100" alphatest="blend" />
+  <ePixmap pixmap="AreaDeltasSat_FHD_Pro/nocover.png" position="1725,371" size="185,272" zPosition="100" alphatest="blend" />
+  <widget source="ServiceEvent" render="PosterX" nexts="0" usedImage="poster" delayPic="0" position="917,96" size="170,255" zPosition="101" borderWidth="1" borderColor="blue" />
+  <widget source="ServiceEvent" render="PosterX" nexts="1" usedImage="poster" delayPic="0" position="917,380" size="170,255" zPosition="101" borderWidth="1" borderColor="white" />
+  <widget source="ServiceEvent" render="PosterX" nexts="2" usedImage="poster" delayPic="0" position="1187,380" size="170,255" zPosition="101" borderWidth="1" borderColor="white" />
+  <widget source="ServiceEvent" render="PosterX" nexts="3" usedImage="poster" delayPic="0" position="1457,380" size="170,255" zPosition="101" borderWidth="1" borderColor="white" />
+  <widget source="ServiceEvent" render="PosterX" nexts="4" usedImage="poster" delayPic="0" position="1732,380" size="170,255" zPosition="101" borderWidth="1" borderColor="white" />
+  <!--<widget source="ServiceEvent" render="AreaDeltasxtraNxtEvnt" nxtEvents="" snglEvent="0" font="Regular;18" position="908,43" size="205,40" zPosition="125" foregroundColor="#7FFF00" transparent="1" />-->
+  <widget source="ServiceEvent" render="AreaDeltasxtraNxtEvnt" nxtEvents="" snglEvent="1" font="Regular;18" position="908,643" size="205,40" zPosition="125" foregroundColor="#7FFF00" transparent="1" />
+  <widget source="ServiceEvent" render="AreaDeltasxtraNxtEvnt" nxtEvents="" snglEvent="2" font="Regular;18" position="1173,643" size="205,40" zPosition="125" foregroundColor="#7FFF00" transparent="1" />
+  <widget source="ServiceEvent" render="AreaDeltasxtraNxtEvnt" nxtEvents="" snglEvent="3" font="Regular;18" position="1443,643" size="205,40" zPosition="125" foregroundColor="#7FFF00" transparent="1" />
+  <widget source="ServiceEvent" render="AreaDeltasxtraNxtEvnt" nxtEvents="" snglEvent="4" font="Regular;18" position="1713,643" size="205,40" zPosition="125" foregroundColor="#7FFF00" transparent="1" />
+  <widget name="list" position="0,100" size="909,900" itemHeight="40" serviceNumberFont="Regular;34" scrollbarMode="showOnDemand" selectionPixmap="AreaDeltasSat_FHD_Pro/infobar/sel_909x55.png" serviceInfoFont="Regular;32" serviceNameFont="Regular;34" serviceItemHeight="40" progressbarHeight="15" progressBarWidth="45" progressPercentWidth="80" colorEventProgressbarBorder="un33333a" fieldMargins="15" nonplayableMargins="15" colorEventProgressbarBorderSelected="darkgrey" colorServiceDescription="orange" progressbarBorderWidth="0" foregroundColorServiceNotAvail="#656565" backgroundColorMarked="#656565" colorServiceDescriptionFallback="orange" colorServiceDescriptionSelectedFallback="orange" colorFallbackItem="#aaaaaa" colorServiceSelectedFallback="orange" />
+    <!--<widget name="list" position="0,100" size="909,900" scrollbarMode="showOnDemand" selectionPixmap="AreaDeltasSat_FHD_Pro/infobar/sel_909x45.png" scrollbarWidth="10" transparent="1" zPosition="3" itemHeight="45" itemWidth="1090" serviceItemHeight="45" serviceNumberFont="Regular;30" serviceNameFont="Regular;28" serviceInfoFont="Regular;28" progressPercentWidth="70" foregroundColor="#ffffff" foregroundColorSelected="#00ffffff" backgroundColor="#000000" additionalInfoFont="Regular;28" colorAdditionalInfo="#808080" colorServiceDescription="#00ffffff" colorServiceDescriptionSelected="#00FF00" foregroundColorServiceNotAvail="#505050" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="white" picServiceEventProgressbar="skin_default/progcl.png" backgroundColorSelected="trbluette" scrollbarSliderForegroundColor="#606060" scrollbarSliderBorderColor="#404040" />-->
+  <widget source="ServiceEvent" render="Label" position="1140,345" size="720,30" foregroundColor="transponderinfo" font="Regular;26" valign="center" halign="center" transparent="1" zPosition="1">
+    <convert type="TransponderInfo" />
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1087,323" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="left">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Progress" position="1178,327" size="650,10" pixmap="window/progress.png" transparent="0" backgroundColor="un33333a" borderWidth="0">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1828,323" size="90,32" transparent="1" foregroundColor="foreground" font="Regular;28" halign="right">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1119,100" size="720,35" transparent="1" foregroundColor="orange" noWrap="1" font="Regular;32" halign="left">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="ServiceEvent" render="AreaDeltasSatRunningText" position="1094,143" size="812,180" options="movetype=running,direction=top,startpoint=0,startdelay=2000,wrap=1,always=0,repeat=2,oneshot=1" transparent="1" font="Regular;28" halign="left">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <widget source="ServiceEvent" render="AreaDeltasSatInfoEvents" position="918,695" size="1000,310" font="Regular;26" halign="center" transparent="1" zPosition="2" backgroundColor="black" foregroundColor="secondFG" valign="top" />
+  <widget source="ServiceEvent" render="BackdropX" delayPic="0" position="918,695" zPosition="10" size="1000,310" alphatest="blend" />
+  <!--<widget source="ServiceEvent" render="AreaDeltasSatNextEvents" options="movetype=running,direction=top,startpoint=0,startdelay=2000,wrap=1,always=0,repeat=2,oneshot=1" position="918,693" size="999,199" transparent="1" timeColor="foreground" foregroundColor="secondFG" noLabel="1" noWrap="1" font="Regular;25" NumberOfItems="4">
+    <convert type="ServiceName">Reference</convert>
+  </widget>-->
+</screen>
+<screen name="SimpleChannelSelection" position="fill" title="Channel Selection" flags="wfNoBorder">
+  <panel name="ChannelSelection" />
+</screen>
+</skin>
